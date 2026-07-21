@@ -7,7 +7,7 @@ class SimbeamControl < Formula
   depends_on xcode: "26.4.1"
 
   def install
-    bin.install "bin/simbeam-control"
+    bin.install "simbeam-control"
   end
 
   def caveats
