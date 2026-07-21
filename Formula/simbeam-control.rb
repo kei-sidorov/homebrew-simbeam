@@ -10,14 +10,14 @@ class SimbeamControl < Formula
     bin.install "bin/simbeam-control"
   end
 
-  test do
-    assert_match "Usage: simbeam-control", shell_output("#{bin}/simbeam-control --help")
-  end
-
   def caveats
     <<~EOS
       simbeam-control uses private CoreSimulator and SimulatorKit APIs from Xcode.
       It supports iOS Simulators only and requires a full Xcode installation.
     EOS
+  end
+
+  test do
+    assert_match "Usage: simbeam-control", shell_output("#{bin}/simbeam-control --help")
   end
 end
