@@ -4,7 +4,7 @@ class SimbeamControl < Formula
   url "https://github.com/kei-sidorov/simbeam-control/releases/download/v0.3.0/simbeam-control_0.3.0_darwin_universal.tar.gz"
   sha256 "fa38202fa89747d8b290b3a2bed3a3e81ffc3262c42e1d116a31987a21c90c6a"
 
-  depends_on xcode: "26.4.1"
+  depends_on :xcode
 
   def install
     bin.install "simbeam-control"
