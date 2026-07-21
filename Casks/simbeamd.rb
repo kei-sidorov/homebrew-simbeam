@@ -21,7 +21,7 @@ cask "simbeamd" do
     skip "Auto-generated on release."
   end
   depends_on formula: [
-      "facebook/fb/idb-companion",
+      "kei-sidorov/simbeam/idb-companion",
       "ffmpeg",
     ]
 
@@ -39,8 +39,5 @@ cask "simbeamd" do
     simbeamd is shipped as an unsigned binary. The cask's post-install hook
     strips the macOS quarantine attribute so Gatekeeper should not block it.
     simbeamd shells out to idb_companion (simulators) and ffmpeg (h264_videotoolbox).
-
-    idb_companion comes from Meta's tap. If install fails to find it, run:
-      brew tap facebook/fb
   EOS
 end
