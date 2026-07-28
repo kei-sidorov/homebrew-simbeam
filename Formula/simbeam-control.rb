@@ -1,8 +1,8 @@
 class SimbeamControl < Formula
   desc "Stream and control a booted iOS Simulator"
   homepage "https://github.com/kei-sidorov/simbeam-control"
-  url "https://github.com/kei-sidorov/simbeam-control/releases/download/v0.5.1/simbeam-control_0.5.1_darwin_universal.tar.gz"
-  sha256 "444285de0ea9471205145d4a10069e7722b9b27214e642a13cd51cb7a7fd4036"
+  url "https://github.com/kei-sidorov/simbeam-control/releases/download/v0.6.0/simbeam-control_0.6.0_darwin_universal.tar.gz"
+  sha256 "272e83646ac46abb7f12ef8ad33ee8d20cc5ba804858c4e000a8cb18dd580041"
 
   depends_on :xcode
 
